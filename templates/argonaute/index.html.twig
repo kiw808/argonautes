@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArgonauteController!{% endblock %}
+
+{% block body %}
+<div>
+    <h2>Membres de l'équipage</h2>
+
+    <section class="member-list">
+    {% for argonaute in argonautes %}
+        <div class="member-item">{{ argonaute.name }}</div>
+    {% endfor %}
+    </section>
+</div>
+{% endblock %}
