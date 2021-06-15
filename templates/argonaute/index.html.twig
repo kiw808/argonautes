@@ -1,14 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ArgonauteController!{% endblock %}
+{% block title %}Les Argonautes{% endblock %}
 
 {% block body %}
+<div>
+    <h2>Ajouter un(e) Argonaute</h2>
+
+    {{ form(form, {'attr': {'class': 'new-member-form',}}) }}
+</div>
+
 <div>
     <h2>Membres de l'équipage</h2>
 
     <section class="member-list">
     {% for argonaute in argonautes %}
         <div class="member-item">{{ argonaute.name }}</div>
+        {% include "argonaute/_delete.html.twig" %}
     {% endfor %}
     </section>
 </div>
