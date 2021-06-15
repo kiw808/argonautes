@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ArgonauteController!{% endblock %}
+{% block title %}Les Argonautes{% endblock %}
 
 {% block body %}
 <div>
@@ -15,6 +15,7 @@
     <section class="member-list">
     {% for argonaute in argonautes %}
         <div class="member-item">{{ argonaute.name }}</div>
+        {% include "argonaute/_delete.html.twig" %}
     {% endfor %}
     </section>
 </div>
