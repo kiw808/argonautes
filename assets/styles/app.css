@@ -33,10 +33,23 @@ label {
   margin-bottom: 0.5em;
 }
 
+input {
+  padding: .3rem .5rem;
+}
+
 button {
   display: inline-block;
   border: none;
   cursor: pointer;
+}
+
+.btn {
+  padding: .4rem .5rem;
+  background-color: rgb(168, 222, 255);
+}
+
+.btn:hover {
+  background-color: rgb(145, 213, 255);
 }
 
 .new-member-form {
@@ -50,11 +63,22 @@ button {
 }
 
 .member-item {
+  text-align: center;
   padding: 0.25em 0;
+  margin-bottom: 1rem;
 }
 
 .delete-item {
   display: inline-block;
+}
+
+.delete-item button {
+  border-radius: 50%;
+}
+
+.delete-item button:hover {
+  background-color: lightcoral;
+  color: white;
 }
 
 footer {
