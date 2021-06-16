@@ -20,7 +20,6 @@ class ArgonauteType extends AbstractType
                     'placeholder' => 'Charalampos',
                 ],
             ])
-            ->add('Envoyer', SubmitType::class)
         ;
     }
 

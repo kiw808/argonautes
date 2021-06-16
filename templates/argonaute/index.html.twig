@@ -6,7 +6,11 @@
 <div>
     <h2>Ajouter un(e) Argonaute</h2>
 
-    {{ form(form, {'attr': {'class': 'new-member-form',}}) }}
+    {{ form_start(form, {'attr': {'class': 'new-member-form',}}) }}
+        {{ form_label(form.name) }}
+        {{ form_widget(form.name) }}
+        <button type="submit" class="btn">{{ button_label|default('Envoyer') }}</button>
+    {{ form_end(form) }}
 </div>
 
 <div>
@@ -14,8 +18,12 @@
 
     <section class="member-list">
     {% for argonaute in argonautes %}
-        <div class="member-item">{{ argonaute.name }}</div>
-        {% include "argonaute/_delete.html.twig" %}
+        <div class="member-item">
+            <span>{{ argonaute.name }}</span>
+
+            {% include "argonaute/_delete.html.twig" %}
+        </div>
+
     {% endfor %}
     </section>
 </div>
