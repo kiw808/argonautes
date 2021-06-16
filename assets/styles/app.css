@@ -38,8 +38,17 @@ label {
   text-align: center;
 }
 
+.member-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .member-item {
   padding: 0.25em 0;
+}
+
+.delete-item {
+  display: inline-block;
 }
 
 footer {

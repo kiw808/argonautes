@@ -14,8 +14,12 @@
 
     <section class="member-list">
     {% for argonaute in argonautes %}
-        <div class="member-item">{{ argonaute.name }}</div>
-        {% include "argonaute/_delete.html.twig" %}
+        <div class="member-item">
+            <span>{{ argonaute.name }}</span>
+
+            {% include "argonaute/_delete.html.twig" %}
+        </div>
+
     {% endfor %}
     </section>
 </div>

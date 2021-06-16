@@ -45,7 +45,7 @@ class ArgonauteController extends AbstractController
             $entityManager->flush();
 
             // Prevent refreshing
-            return $this->redirectToRoute('success');
+            return $this->redirectToRoute('home');
         }
 
         return $this->render('argonaute/index.html.twig', [
@@ -72,17 +72,6 @@ class ArgonauteController extends AbstractController
                 $entityManager->flush();
         }
 
-        return $this->redirectToRoute('home');
-    }
-
-    /**
-     * Route to prevent refreshing on submit
-     * 
-     * @Route("/success", name="success")
-     * @return Response
-     */
-    public function success(): Response
-    {
         return $this->redirectToRoute('home');
     }
 }
