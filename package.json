@@ -3,7 +3,7 @@
         "node": "12.22.1",
         "yarn" : "1.22.10"
     },
-    "dependecies": {
+    "dependencies": {
         "@symfony/stimulus-bridge": "^2.0.0",
         "@symfony/webpack-encore": "^1.0.0",
         "core-js": "^3.0.0",
