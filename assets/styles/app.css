@@ -33,6 +33,12 @@ label {
   margin-bottom: 0.5em;
 }
 
+button {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
 .new-member-form {
   margin: 2em 0 4em 0;
   text-align: center;
